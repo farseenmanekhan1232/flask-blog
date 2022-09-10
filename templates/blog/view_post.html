@@ -1,0 +1,7 @@
+{% extends 'base.html' %} {% block header %}
+<h1>{% block title %} "{{ post['title'] }}"{% endblock %}</h1>
+{% endblock %} {% block content %}
+<p name="body" id="body">{{post['body'] }}</p>
+<br />
+<a href="{{url_for('blog.index')}}"> Back</a>
+{% endblock %}
